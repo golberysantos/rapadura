@@ -24,7 +24,7 @@
     </tr>
     <tr>
         <td>
-            Endereço: <input type='text' size='50' name='end'>
+            Endereï¿½o: <input type='text' size='50' name='end'>
         </td>
         <td>
             Complemento: <input type='text' size='15' name='complemento'>
@@ -56,7 +56,7 @@
     <tr>
         <td colspan='2'>
 
-        Período: <input type='text' size='2' name='dd' value='dd'>/
+        Perï¿½odo: <input type='text' size='2' name='dd' value='dd'>/
                  <input type='text' size='2' name='mm' value='mm'>/
                  <input type='text' size='2' name='aa' value='aa'>&nbsp;
                  <b>a</b> &nbsp;<input type='text' size='2' name='dd1' value='dd'>/
@@ -64,10 +64,10 @@
                  <input type='text' size='2' name='aa1' value='aa'> &nbsp;
         Curso: <select name='curso' size='1'>
                    <option>------------</option>
-                   <option>Informática Básica</option>
-                   <option>Informática Avançada</option>
+                   <option>Informï¿½tica Bï¿½sica</option>
+                   <option>Informï¿½tica Avanï¿½ada</option>
                    <option>Designer</option>
-                   <option>Inglês</option>
+                   <option>Inglï¿½s</option>
                    <option>Espanhou</option>
                 </select>
                     </td>
@@ -88,11 +88,11 @@
          Turno: <select name='turno' size='1'>
                    <option>----------</option>
                    <option>Matutino</option>
-                   <option>Intermediário</option>
+                   <option>Intermediï¿½rio</option>
                    <option>Vespertino</option>
                    <option>Noite</option>
                    </select>
-         Horário: <select name='horario' size='1'>
+         Horï¿½rio: <select name='horario' size='1'>
                    <option>------------</option>
                    <option>08:00 as 10:00</option>
                    <option>10:00 as 12:00</option>

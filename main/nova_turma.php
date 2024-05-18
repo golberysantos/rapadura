@@ -3,7 +3,7 @@
  <TITLE>Cetam Nova Turma</TITLE>
 </HEAD>
 <BODY>
-<?PHP
+<?php
   include "homepage_function.php";
   homepage_op();
   senha();
