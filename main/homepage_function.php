@@ -1,14 +1,16 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documento PHP</title>
 </head>
 <body>  
-  
-<?php function homepage_op(); ?>
- 
+
+<?php
+  function homepage_op()
+ {echo"
  <form action='menu.php' method='POST'>
   <table border='1' width='100%'>
 <tr aling='center'>
@@ -24,34 +26,39 @@
        <input type='submit' name='op' value='Apostilas'>&nbsp;</td>
 </tr>
 </table>
-</form>
+</form>"; }
 
-<?php function homepage(); ?>
+function homepage()
+{ echo" <table border='1' width='100%'>
+<tr>
+  <td> Alunos 2006 <br>
+       Alunos 2007 <br>
+       Alunos 2008 <br>
+       Meus Arquivos <br>
+       <a href='nova_turma.php'>Nova Turma</a><br>
+  </td>
 
-<table border='1' width='100%'>
-  <tr>
-    <td> Alunos 2006 <br>
-         Alunos 2007 <br>
-         Alunos 2008 <br>
-         Meus Arquivos <br>
-         <a href='nova_turma.php'>Nova Turma</a><br>
-    </td>
-  
-    <td> Esta p gina est  em desenvolvimento </td>
-  
-    <td> <pre>             <img src='image/bandeira_am.gif' width='120' height='60' border='0'>
-               <img src='image/Imag011.jpg' width='120' height='150' border='0'>
-               <img src='image/fotos 027.jpg' width='120' height='150' border='0'>
-         </pre>
-  
-    </td>
-  </tr>
-  </table> 
-<?php function senha(); ?>
+  <td> Esta p gina est  em desenvolvimento </td>
+
+  <td> <pre>             <img src='image/bandeira_am.gif' width='120' height='60' border='0'>
+             <img src='image/Imag011.jpg' width='120' height='150' border='0'>
+             <img src='image/fotos 027.jpg' width='120' height='150' border='0'>
+       </pre>
+
+  </td>
+</tr>
+</table> ";
+           }
+function senha()
+{
+  echo"
 <form action='nova_turma.php' method='POST'>
       Informe a senha: <input type='password' name='senha' size='20'>
    <input type='submit' name='confirmar' value='Confirmar'>&nbsp;
-</form>
+</form> ";
+       }
 
+
+?>
 </BODY>
 </HTML>

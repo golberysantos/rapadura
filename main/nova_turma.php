@@ -3,7 +3,7 @@
  <TITLE>Cetam Nova Turma</TITLE>
 </HEAD>
 <BODY>
-<?
+<?PHP
   include "homepage_function.php";
   homepage_op();
   senha();
@@ -35,8 +35,8 @@ echo " Senha incorreta. Tente novamente.";}
     <td colspan='0'>
         Projeto: <select name='projeto' size='1'>
                         <option> ---- </option>
-                        <option>Inclusão Digital</option>
-                        <option>Projeto Cidadão</option>
+                        <option>Inclusï¿½o Digital</option>
+                        <option>Projeto Cidadï¿½o</option>
                  </select> &nbsp;
         <td>
     </tr>
@@ -44,7 +44,7 @@ echo " Senha incorreta. Tente novamente.";}
     <tr>
         <td colspan='2'>
 
-        Período: <input type='text' size='2' name='dd' value='dd'>/
+        Perï¿½odo: <input type='text' size='2' name='dd' value='dd'>/
                  <input type='text' size='2' name='mm' value='mm'>/
                  <input type='text' size='2' name='aa' value='aa'>&nbsp;
                  <b>a</b> &nbsp;<input type='text' size='2' name='dd1' value='dd'>/
@@ -52,10 +52,10 @@ echo " Senha incorreta. Tente novamente.";}
                  <input type='text' size='2' name='aa1' value='aa'> &nbsp;
         Curso: <select name='curso' size='1'>
                    <option>------------</option>
-                   <option>Informática Básica</option>
-                   <option>Informática Avançada</option>
+                   <option>Informï¿½tica Bï¿½sica</option>
+                   <option>Informï¿½tica Avanï¿½ada</option>
                    <option>Designer</option>
-                   <option>Inglês</option>
+                   <option>Inglï¿½s</option>
                    <option>Espanhou</option>
                 </select>
                     </td>
@@ -73,11 +73,11 @@ echo " Senha incorreta. Tente novamente.";}
          Turno: <select name='turno' size='1'>
                    <option>----------</option>
                    <option>Matutino</option>
-                   <option>Intermediário</option>
+                   <option>Intermediï¿½rio</option>
                    <option>Vespertino</option>
                    <option>Noite</option>
                    </select>
-         Horário: <select name='horario' size='1'>
+         Horï¿½rio: <select name='horario' size='1'>
                    <option>------------</option>
                    <option>08:00 as 10:00</option>
                    <option>10:00 as 12:00</option>
@@ -94,8 +94,8 @@ echo " Senha incorreta. Tente novamente.";}
                    <option>  ------- </option>
                    <option>CCTM</option>
                    <option>IBC</option>
-                   <option>Prato Cidadão São José</option>
-                   <option>Prato Cidadão Jorge Teixeira</option>
+                   <option>Prato Cidadï¿½o Sï¿½o Josï¿½</option>
+                   <option>Prato Cidadï¿½o Jorge Teixeira</option>
                    </select>
             </td>
     </tr>
