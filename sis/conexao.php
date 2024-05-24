@@ -1,23 +1,22 @@
-
 <?php
-// https://www.php.net/manual/en/mysqlinfo.api.choosing.php
-$host = 'localhost';
-$dbname   = 'rapadura';
-$user = 'root';
-$pwrd = '';
-$pdo = new PDO('mysql:host=localhost;dbname=rapadura', $user, $pwrd);
+class Conexao
+{
+    public static function ConectarBD()
+    {
+        // https://www.php.net/manual/en/mysqlinfo.api.choosing.php
+        $host = 'localhost';
+        $dbname   = 'rapadura';
+        $user = 'root';
+        $pwrd = '';
 
+        try {
+            $pdo = new PDO('mysql:host=' . $host . ';dbname=' . $dbname . '', $user, $pwrd);
+        } catch (PDOException $e) {
+            print "<h6>Desculpe. Houve erro de conexão com o banco de dados.<h6/>";
+            $pdo = null;
+        }
 
-$statement = $pdo->query("INSERT INTO PESSOA (observacao) VALUE ('GOLBERY')");
-$statement = $pdo->query("SELECT * FROM pessoa");
-$row = $statement->fetch(PDO::FETCH_ASSOC);
-echo $row['id'];
-echo $row['observacao'];
-//echo htmlentities($row['observacao']);
+        return $pdo;
+    }
 
-foreach ($row as $key => $value) {
-    echo $key;
 }
-
-?>
-<h1><?php echo $row['observacao']; ?></h1>

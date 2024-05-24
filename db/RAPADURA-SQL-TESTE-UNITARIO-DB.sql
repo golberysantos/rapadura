@@ -4,14 +4,14 @@
 USE rapadura;
 
 -- PESSOA
-INSERT INTO PESSOA 
+INSERT INTO pessoa 
 	(observacao) 
 VALUE 
-	('TESTE'), 
-    ('TESTE'),
-    ('TESTE'),
-    ('TESTE'),
-    ('TESTE')   
+	('TESTE1'), 
+    ('TESTE2'),
+    ('TESTE3'),
+    ('TESTE4'),
+    ('TESTE5')   
 ;
 
 select * from pessoa;
