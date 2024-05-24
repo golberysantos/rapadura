@@ -7,6 +7,7 @@
 </head>
 <body>  
 <?php  
+include './conexao.php';
 include './fisica.php';
 ?>
  <form action='menu.php' method='POST'>
