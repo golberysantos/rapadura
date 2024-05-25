@@ -14,9 +14,7 @@ VALUE
     ('TESTE5')   
 ;
 
-select mysql_insert_id;
-
-select * from pessoa;
+-- select * from pessoa;
 
 update pessoa
 set observacao = 'TESTE PES.1'

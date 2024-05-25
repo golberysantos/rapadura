@@ -1,7 +1,7 @@
 <?php
 class Conexao
 {
-    public static function ConectarBD()
+    static function ConectarBD()
     {
         // https://www.php.net/manual/en/mysqlinfo.api.choosing.php
         $host = 'localhost';

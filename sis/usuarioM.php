@@ -1,9 +1,9 @@
 <?php
 
-class Fisica
+class UsuarioM
 {
 
-    public function Criar($observacao, $cpf, $nome, $sobrenome, $nascimento,)
+    public function Criar($nickname, $ri, $senha, $observacao)
     {
         
         $ok = false;
@@ -13,11 +13,13 @@ class Fisica
             $cnx->beginTransaction();
 
             $stmt = $cnx->prepare("INSERT INTO pessoa(observacao) VALUE ($observacao)");
-            $ultimoId = $cnx->lastInsertId();
+            $pessoa_id = $stmt->lastInsertId();
 
-            $ok = $cnx->query("INSERT INTO fisica(observacao) VALUE ($observacao)");
+            $ok = $cnx->query("INSERT INTO usuario(senha, nickname, ri,) VALUE (".$senha.",".$nickname.",".$ri.",".$pessoa_id.")");
             
             $cnx->commit();
+
+            return $ok;
             
         } catch (\Throwable $e) {
             $cnx->rollback();
@@ -25,7 +27,7 @@ class Fisica
         }
     }
 
-    public function Listar()
+    public function Listar($id)
     {
         $cnx = Conexao::ConectarBD();
         $pessoa = $cnx->query("SELECT * FROM pessoa");
@@ -36,3 +38,6 @@ class Fisica
         }
     }
 }
+
+$us = new UsuarioM;
+echo "fafdas";
