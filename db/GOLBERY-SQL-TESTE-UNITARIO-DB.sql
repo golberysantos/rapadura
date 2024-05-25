@@ -4,17 +4,15 @@
 USE rapadura;
 
 -- PESSOA
-INSERT INTO pessoa 
+INSERT INTO PESSOA 
 	(observacao) 
 VALUE 
-	('TESTE1'), 
-    ('TESTE2'),
-    ('TESTE3'),
-    ('TESTE4'),
-    ('TESTE5')   
+	('TESTE'), 
+    ('TESTE'),
+    ('TESTE'),
+    ('TESTE'),
+    ('TESTE')   
 ;
-
-select mysql_insert_id;
 
 select * from pessoa;
 

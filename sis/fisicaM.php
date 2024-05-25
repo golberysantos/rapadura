@@ -3,16 +3,35 @@
 class Fisica
 {
 
-    public function Criar()
+    public function Criar($observacao, $cpf, $nome, $sobrenome, $nascimento,)
     {
+        $ok = false;
         $cnx = Conexao::ConectarBD();
-        $pessoa = $cnx->query("INSERT INTO  pessoa");
 
-        $row = $pessoa->fetch(PDO::FETCH_ASSOC);
+        $stmt = $cnx->prepare("INSERT INTO 
+                pessoa(observacao) 
+            VALUE
+                ($observacao)
+            ");
 
-        //$users = $dbh->query($sql);
-        foreach ($pessoa as $row) {
-            print "<h6>" . $row["observacao"] . "<h6/>";
+        $ok = $cnx->query("INSERT INTO 
+                fisica(observacao) 
+            VALUE
+                ($observacao)
+            ");
+
+        try {
+
+            $cnx->beginTransaction();
+
+            $cnx->commit();
+
+            print $cnx->lastInsertId();
+        } catch (PDOExecption $e) {
+
+            $cnx->rollback();
+
+            print "Error!: " . $e->getMessage() . "</br>";
         }
     }
 
@@ -26,5 +45,4 @@ class Fisica
             print "<h6>" . $row["observacao"] . "<h6/>";
         }
     }
- 
 }
